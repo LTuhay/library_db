@@ -1,10 +1,6 @@
-DROP PROCEDURE IF EXISTS sp_BorrowersWithOverdueBooks;
-GO
-
-CREATE PROCEDURE sp_BorrowersWithOverdueBooks
+CREATE OR ALTER PROCEDURE sp_BorrowersWithOverdueBooks
 AS
 BEGIN
-
     CREATE TABLE #OverdueBorrowers (
         BorrowerID INT,
         FirstName NVARCHAR(50),
